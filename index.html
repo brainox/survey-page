@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabmic Ventures Survey</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Fabmic Ventures Customer Feedback Form</h1>
+            <p id="description" class="description text-center">You are very special to us, please can use a minute to help us to know how to serve you better. Thank you.</p>    
+        </header>
+        
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                
+                <label for="name" id="name-label">Name</label>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" class="form-control" required>
+                </div>
+
+            </div>
+            
+            <div class="form-group">
+                
+                <label for="email" id="email-label">Email</label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+                </div>
+
+            </div>
+            
+            <div class="form-group">
+                <label for="tel" id="tel-label">Phone Number</label>
+                <div>
+                    <input type="tel" name="tel" id="tel" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">age (optional)</label>
+                <div>
+                    <input type="number" name="age" id="number" min="10" max="43" placeholder="10" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>How did you know about us?</p>    
+                <select name="discovery" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="display">Public Display</option>
+                    <option value="billboard">BillBoard</option>
+                    <option value="friend">Friend</option>
+                    <option value="family">Family</option>
+                    <option value="social">Social Media</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Did you find the item you came to buy?</p>
+                <label>
+                    <input type="radio" name="found-item" class="input-radio" value="yes">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="found-item" class="input-radio" value="no">
+                    No
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p>Would you recommend Fabmic Ventures to a friend?</p> 
+                <label>
+                    <input type="radio" name="user-recommend" class="input-radio" value="sure">
+                    Sure
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" class="input-radio" value="Not-sure">    
+                    Not really sure
+                </label>
+                <label >
+                    <input type="radio" name="user-recommend" class="input-radio" value="not-know">
+                    I don't think so
+                </label>    
+            </div>
+            
+            <div class="form-group">
+                <p>What would you like to see improved?</p>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="customer-service" class="input-checkbox">
+                    Customer Service
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Item Delivery" class="input-checkbox">
+                    Item Delivery
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="variety-of-items" class="input-checkbox">
+                    Items Variety
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Rate us:</p>
+                <label>
+                    <input type="radio" name="rate" value="poor" class="input-radio">
+                    Poor
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="good" class="input-radio">
+                    Good
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="excellent" class="input-radio">
+                    Excellent
+                </label>
+            </div>
+
+            
+            <div class="form-group">
+                <p>Tell us how we can serve you better?</p>
+                <textarea id="comments" cols="30" rows="10" class="input-textarea"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button"
+                id="submit">
+                    Submit
+                </button>
+            </div>
+      </form>
+    </div>
+</body>
+</html>
