@@ -96,6 +96,11 @@ button {
     border-radius: 0.25rem;
 }
 
+.form-control:focus {
+    background-color: #f1e5d3;
+    outline: none;
+}
+
 .input-radio, .input-checkbox {
     display: inline-block;
     margin-right: 0.65rem;
